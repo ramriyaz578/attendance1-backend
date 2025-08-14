@@ -3,7 +3,7 @@ const mongoose = require ('mongoose');
 const colors = require ('colors');
 
 
-export const connectDB = async () => {
+const connectDB = async () => {
     try {
     await mongoose.connect(`mongodb+srv://ramjai0787:b7hvtvGN5Koou4gu@attendance.zkelynn.mongodb.net/mp360?retryWrites=true&w=majority&appName=attendance`) 
 
@@ -13,4 +13,5 @@ export const connectDB = async () => {
     };
 }
 
+module.exports = { connectDB }
 
