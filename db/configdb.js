@@ -1,6 +1,6 @@
 // const mongoose = require('mongoose');
-import mongoose from 'mongoose';
-import colors from 'colors';
+const mongoose = require ('mongoose');
+const colors = require ('colors');
 
 
 export const connectDB = async () => {
